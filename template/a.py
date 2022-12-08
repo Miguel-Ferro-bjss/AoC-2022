@@ -1,10 +1,6 @@
-from lib import find
-
 def run():
     #code to run
-    a = 'adjawdawd asef'
-    print(find.firstWord(a))
-    print('hi')
+    f = open('input.txt', 'r').read().strip().split('\n')
 
 
 
