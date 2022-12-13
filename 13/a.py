@@ -10,7 +10,7 @@ def run():
 
     for i in range(len(f)):
         pair = f[i].split('\n')
-        # print('\n'+ str(i + 1))
+        # print('\n'j+ str(i + 1))
         # print(pair)
         p1 = eval(pair[0])
         p2 = eval(pair[1])
