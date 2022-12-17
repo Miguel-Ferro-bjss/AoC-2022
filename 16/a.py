@@ -2,7 +2,7 @@ from collections import deque
 from itertools import chain, combinations
 
 """
-A lot of this was 'stolen' from hyperneutrino's walkthrough on Youtube.
+A lot of this was 'stolen' from hyper-neutrino's walkthrough on Youtube.
 I didn't have the courage to implement the caching mechanism with the bitmask,
 so I just waited and used my raging CPU fan as a space heater :)
 """
