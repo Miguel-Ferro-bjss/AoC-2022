@@ -23,7 +23,7 @@ print('part 1:', area)
 edges = [[min(cube[d] for cube in cubes) for d in range(3)], [max(cube[d] for cube in cubes) for d in range(3)]]
 
 def propagate_neighbors(point):
-    connected = set()
+    neighbours = set()
     to_check = [point]
     while to_check:
         curr_point = to_check.pop()
@@ -33,11 +33,11 @@ def propagate_neighbors(point):
           p = tuple([curr_point[d] + s[d] for d in range(3)])
           if (i<3 and p[i] < edges[0][i]) or (i>2 and edges[1][i-3] < p[i-3]):
               return True
-          if p not in connected:
-              connected.add(p)
+          if p not in neighbours:
+              neighbours.add(p)
               to_check.append(p)
 
-    air_pockets.update(connected)
+    air_pockets.update(neighbours)
     return False
 
 air_pockets = set()
